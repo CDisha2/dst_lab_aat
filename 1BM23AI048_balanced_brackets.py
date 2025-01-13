@@ -1,0 +1,17 @@
+print("question:Balanced Brackets\nname:C Disha\nUSN:1BM23AI048\nsec:3A")
+n = int(input())
+for i in range(n):
+    s = input()
+    stack = []
+    brac = {')': '(', '}': '{', ']': '['}
+    for char in s:
+        if char in brac.values():
+            stack.append(char)
+        elif char in brac.keys():
+            if stack and stack[-1] == brac[char]:
+                stack.pop()
+            else:
+                print("NO")
+                break
+    else:
+        print("YES" if not stack else "NO")
