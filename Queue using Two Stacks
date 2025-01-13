@@ -1,0 +1,33 @@
+print("question:Queue using Two Stacks\nname:C Disha\nUSN:1BM23AI048\nsec:3A")
+class Queue:
+    def __init__(self):
+        self.s1 = []
+        self.s2 = []
+    def enqueue(self, data):
+        self.s1.append(data)
+    def dequeue(self):
+        if not self.s2:
+            while self.s1:
+                self.s2.append(self.s1.pop())
+        if self.s2:
+            return self.s2.pop()  
+        else:
+            None
+    def peek(self):
+        if not self.s2:
+            while self.s1:
+                self.s2.append(self.s1.pop())
+        if self.s2:
+            return self.s2[-1]  
+        else:
+            None
+n = int(input())
+q = Queue()
+for i in range(n):
+    a = list(map(int, input().split()))
+    if a[0] == 1:
+        q.enqueue(a[1])
+    elif a[0] == 2:
+        q.dequeue()
+    elif a[0] == 3:
+        print(q.peek())
