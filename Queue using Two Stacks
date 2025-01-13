@@ -1,4 +1,7 @@
-print("question:Queue using Two Stacks\nname:C Disha\nUSN:1BM23AI048\nsec:3A")
+print("question:Queue using Two Stacks")
+print("name:C Disha")
+print("USN:1BM23AI048")
+print("sec:3A")
 class Queue:
     def __init__(self):
         self.s1 = []
