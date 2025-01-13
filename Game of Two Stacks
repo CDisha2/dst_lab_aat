@@ -1,4 +1,7 @@
-print("question: Game of Two Stacks\nname:C Disha\nUSN: 1BM23AI048\nsec:3A")
+print("question: Game of Two Stacks")
+print("name:C Disha")
+print("USN: 1BM23AI048")
+print("sec:3A")
 x = int(input())
 for i in range(x):
     n, m, max_sum = input().split()
