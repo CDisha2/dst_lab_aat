@@ -1,4 +1,7 @@
-print("question:Balanced Brackets\nname:C Disha\nUSN:1BM23AI048\nsec:3A")
+print("question:Balanced Brackets")
+print("name:C Disha")
+print("USN:1BM23AI048")
+print("sec:3A")
 n = int(input())
 for i in range(n):
     s = input()
